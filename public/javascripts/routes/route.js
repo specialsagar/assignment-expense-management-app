@@ -9,8 +9,8 @@ app.config(function($routeProvider) {
       templateUrl: 'templates/userLists.html',
       controller: 'userListCtrl'
     }).
-    when('userDetail', {
-      templateUrl: 'templates/userdetail.html',
+    when('/userDetail', {
+      templateUrl: 'templates/userdetails.html',
       controller: 'userInfoCtrl'
     }).
     otherwise({

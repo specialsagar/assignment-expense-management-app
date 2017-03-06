@@ -21,4 +21,13 @@ app2.controller('userInfoCtrl', function ($scope){
         }
       ]
   };
+
+  $scope.addTxn = function(){
+    console.log();
+    $scope.userInfo.transactions.push($scope.transaction);
+    $scope.transactions = {};
+  }
+  $scope.removeTxn = function(transaction) {
+    $scope.userInfo.transactions.splice($scope.userInfo.transactions.indexOf(transaction),1);
+  }
 });
