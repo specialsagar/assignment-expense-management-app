@@ -5,7 +5,7 @@ app.controller('userListCtrl', function ($scope,$location){
     $scope.modalContact = contact;
   }
   $scope.redirectToUser = function(){
-    // $location.path('/userDetail');
+    $location.path('/userDetail');
   };
   $scope.contactList = [
     {
