@@ -5,16 +5,20 @@
     <title>Expense management app</title>
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/style.css">
 
     <script src="angular/angular.min.js"></script>
     <script src="angular-route/angular-route.min.js"></script>
-    <script src="jQuery/dist/jquery.min.js"></script>
+    <script src="jquery/dist/jquery.min.js"></script>
     <script src="bootstrap/dist/js/bootstrap.min.js"></script>
 
-    <script src="javascripts/scripts.js" charset="utf-8"></script>
+    <script src="javascripts/routes/route.js" charset="utf-8"></script>
+    <script src="javascripts/controllers/userListController.js" charset="utf-8"></script>
+    <script src="javascripts/controllers/userInfoController.js" charset="utf-8"></script>
   </head>
-  <body>
-    
+  <body ng-app="expenseMgntApp">
+    <div class="container">
+      <div ng-view></div>
+    </div>
   </body>
 </html>

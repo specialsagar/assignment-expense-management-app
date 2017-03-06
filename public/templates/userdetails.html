@@ -1,0 +1,48 @@
+<div class="row">
+  <div class="col-xs-12">
+    <ul class="contact-list list">
+      <li class="col-xs-4 col-md-3 text-center">
+        <div class="contact">
+          <div class="contact-image-wrapper">
+            <span class="contact-image-block">
+              <img ng-src="{{userInfo.picture}}" alt="">
+            </span>
+          </div>
+          <div class="contact-info">
+            <h3>{{userInfo.name}}</h3>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="row">
+    <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Txn ID</th>
+        <th>Txn Amt</th>
+        <th>Txn Type</th>
+        <th>Txn Time</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="txn in userInfo.transactions">
+        <td>{{txn.txnId}}</td>
+        <td>{{txn.txnAmt}}</td>
+        <td>{{txn.txnType}}</td>
+        <td>{{txn.txnTime}}</td>
+        <td><button type="button" ng-click="removeTxn()"></button></td>
+      </tr>
+      <tr>
+        <td><input type="text" ng-model="transaction.txnId" value="{{userInfo.transactions.length}}" disabled></td>
+        <td><input type="text" ng-model="transaction.txnAmt"></td>
+        <td><input type="text" ng-model="transaction.txnType"></td>
+        <td><input type="text" ng-model="transaction.txnTime"></td>
+      </tr>
+      <tr>
+        <td colspan="4"><button type="button" ng-click="addTxn()"></button></td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+</div>
