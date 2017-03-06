@@ -1,0 +1,22 @@
+{
+  "name": "assignment-expense-management-app",
+  "description": "This is an assignment given to me for selection purpose. Here I will be using angular js 1.x to operate CRUD operations for the product pricing and product items.",
+  "main": "app.js",
+  "authors": [
+    "Sagar Shah"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/specialsagar/assignment-expense-management-app",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0",
+    "angular": "^1.6.2"
+  }
+}

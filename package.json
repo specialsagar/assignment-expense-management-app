@@ -1,6 +1,6 @@
 {
   "name": "assignment-expense-management-app",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "start": "node ./bin/www"
@@ -13,5 +13,18 @@
     "jade": "~1.11.0",
     "morgan": "~1.7.0",
     "serve-favicon": "~2.3.2"
-  }
+  },
+  "description": "This is an assignment given to me for selection purpose. Here I will be using angular js 1.x to operate CRUD operations for the product pricing and product items.",
+  "main": "app.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/specialsagar/assignment-expense-management-app.git"
+  },
+  "author": "Sagar Shah",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/specialsagar/assignment-expense-management-app/issues"
+  },
+  "homepage": "https://github.com/specialsagar/assignment-expense-management-app#readme"
 }
